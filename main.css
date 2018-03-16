@@ -1,0 +1,150 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+main {
+  height: 100vh;
+  background-image: url("flowers.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.mtu, main.goals, main.l2l {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+nav {
+  padding: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+nav a{
+  padding: 2vh 3vh;
+  border-right-style: solid;
+  border-right-width: medium;
+}
+
+a {
+  color: #F291DF;
+  text-shadow: 0.5px 0.5px 1px darkgray;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a:hover {
+  color: white;
+  background: linear-gradient(to bottom right, rgba(74, 156, 67, 0.2), rgba(94, 181, 73, 0.7));
+  border-right-width: medium;
+  border-color: #F291DF;
+}
+
+h1 {
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px -2px 6px black;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+img {
+  height: 50vh;
+  width: 23vw;
+  padding-bottom: 5vh;
+}
+
+.about-me {
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.about-me p {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    background-color: rgba(999, 999, 999, 0.1);
+    font-size: 3vh;
+}
+
+.mtu-section h2:nth-of-type(1) {
+  padding-top: 0;
+}
+
+.about-me p, .mtu-section p, .goals-section p, .l2l-section p {
+  font-weight: bold;
+  padding-bottom: 2vh;
+}
+
+.goals-section p:nth-of-type(1), .l2l-section p:nth-of-type(1) {
+  padding-bottom: 0;
+}
+
+.mtu-section, .goals-section, .l2l-section {
+  height: auto;
+  width: 33vw;
+  padding: 3vh 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(999, 999, 999, 0.4);
+}
+
+.mtu-section:not(:last-of-type), .goals-section:not(:last-of-type), .l2l-section:not(:last-of-type) {
+  border-right-style: solid;
+  border-width: thin;
+}
+
+.active1 {
+  border-right: none;
+  color: white;
+  background: linear-gradient(to bottom right, rgba(74, 156, 67, 0.2), rgba(94, 181, 73, 0.7));
+}
+
+
+.active {
+  color: white;
+  border-color: #F291DF;
+  background: linear-gradient(to bottom right, rgba(74, 156, 67, 0.2), rgba(94, 181, 73, 0.7));
+}
+
+
+.meetupslink, .meetupslink:hover {
+  border: none;
+}
